@@ -1,21 +1,21 @@
-const {subCommand, plugin} = parseCommandLine()
-const api = require('api')
+const api = require('./api')
 
-if (subCommand === 'add' && plugin === 'eslint') {
-  const eslintPlugin = require('./plugins/eslint')
+const eslintPlugin = require('./plugins/eslint')
 
-  eslList.transform(api)
+eslintPlugin.transform(api)
 
-  execute(api.actions)
+const executeActions = async (actions) => {
+
 }
 
 const execute = async actions => {
   for (action of actions) {
     printAction(action)
-    await executeActions()
   }
+  await executeActions(actions)  
 }
 
 const printAction = action => {
-  
+  console.log(action)
 }
+execute(api.getActions())

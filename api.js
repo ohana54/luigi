@@ -1,13 +1,13 @@
 'use strict'
 
-options = { ignoreUserChanges, oneTimeOnly }
-const actions = exports.actions = []
+//options = { ignoreUserChanges, oneTimeOnly }
+const actions = []
 
 module.exports = {
-  package: (package, version) => {
-    actions.push({action: 'package', package, version})
+  npmPackage: (npmPackage, version) => {
+    actions.push({action: 'package', npmPackage, version})
   },
-	packageQuery: (package) => 'version',
+	packageQuery: (npmPackage) => 'version',
 
   file: (path, content) => {
     actions.push({action: 'file', path, content})
@@ -19,6 +19,8 @@ module.exports = {
   },
 	npmScriptQuery: (scriptType, regExToFind) => ''
 }
+
+module.exports.getActions = () => actions
 
 // test: mocha ./test/*.js
 
