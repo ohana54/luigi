@@ -1,0 +1,20 @@
+{
+  "name": "powerups",
+  "version": "1.0.0",
+  "description": "A tool to add powerups to your package",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ohana54/powerups.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "Unlicense",
+  "bugs": {
+    "url": "https://github.com/ohana54/powerups/issues"
+  },
+  "homepage": "https://github.com/ohana54/powerups#readme"
+}
