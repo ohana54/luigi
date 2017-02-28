@@ -8,13 +8,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ohana54/powerups.git"
+    "url": "git+https://github.com/powerups-tool/powerups.git"
   },
   "keywords": [],
   "author": "",
   "license": "Unlicense",
   "bugs": {
-    "url": "https://github.com/ohana54/powerups/issues"
+    "url": "https://github.com/powerups-tool/powerups/issues"
   },
-  "homepage": "https://github.com/ohana54/powerups#readme"
+  "homepage": "https://github.com/powerups-tool/powerups#readme"
 }
